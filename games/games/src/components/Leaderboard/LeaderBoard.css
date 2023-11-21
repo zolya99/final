@@ -1,0 +1,52 @@
+/* CSS kód a színesebb leaderboardhoz */
+.leaderboard-container {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e0f7fa; /* Világoskék háttérszín */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .leaderboard-item:hover {
+    background-color: #b2ebf2; /* Világoskék hover szín */
+  }
+  
+  .position {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .email {
+    font-weight: bold;
+    color: #1565c0; /* Sötétkék szín az email szövegéhez */
+  }
+  
+  .score {
+    color: #4caf50; /* Zöld szín a pontszámhoz */
+    font-weight: bold;
+  }
+  

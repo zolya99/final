@@ -1,0 +1,106 @@
+
+.card{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-gap: 20px;
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .card img {
+    width: 100px;
+    height: 200px;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 6px;
+  }
+  .card .front{
+    transform: rotateY(90deg);
+    position: absolute;
+  }
+
+  .card .flipped .front {
+    transform: rotateY(0deg);
+  }
+
+  .image{
+    width: 100px;
+  }
+
+  .titlem{
+    font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+    display:block;
+    text-align: center;
+  }
+
+  .newGameButton {
+    position: relative;
+    background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20%;
+    left:45%;
+    
+  }
+  
+  .newGameButton:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .newGameButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  .backg{
+    background-image: url("./img/Memorybackg.jpg");
+    background-size: cover;
+    height: 100%;
+    
+    
+  }
+
+  .scoreM{
+    text-align: center;
+    width:10%;
+    position: relative;
+    margin-top: 10px;
+    left: 45.5%;
+    color: white;
+    border-color: #553c9a;
+    border-style: groove;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+    display: block;
+  }
